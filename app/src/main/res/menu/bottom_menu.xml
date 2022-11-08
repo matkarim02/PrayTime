@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/vremya"
+        android:icon="@drawable/ic_vremya"
+        android:title="namaz uaqyty"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/qibla"
+        android:icon="@drawable/ic_qibla"
+        android:title="qūbyla"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/namaz"
+        android:icon="@drawable/ic_namaz"
+        android:title="namaz oqū"
+        android:orderInCategory="1"/>
+    <item
+        android:id="@+id/dua"
+        android:icon="@drawable/ic_dua"
+        android:title="dūğa,zıkır"
+        android:orderInCategory="1"/>
+</menu>
