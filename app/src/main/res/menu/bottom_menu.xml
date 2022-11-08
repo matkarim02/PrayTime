@@ -9,15 +9,15 @@
         android:id="@+id/qibla"
         android:icon="@drawable/ic_qibla"
         android:title="qūbyla"
-        android:orderInCategory="1"/>
+        android:orderInCategory="2"/>
     <item
         android:id="@+id/namaz"
         android:icon="@drawable/ic_namaz"
         android:title="namaz oqū"
-        android:orderInCategory="1"/>
+        android:orderInCategory="3"/>
     <item
         android:id="@+id/dua"
         android:icon="@drawable/ic_dua"
         android:title="dūğa,zıkır"
-        android:orderInCategory="1"/>
+        android:orderInCategory="4"/>
 </menu>
