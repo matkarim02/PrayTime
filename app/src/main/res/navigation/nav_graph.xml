@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/duaFragment">
+    app:startDestination="@id/dua">
 
     <fragment
-        android:id="@+id/duaFragment"
+        android:id="@+id/dua"
         android:name="com.example.project.screens.dua.DuaFragment"
         android:label="fragment_dua"
         tools:layout="@layout/fragment_dua" />
     <fragment
-        android:id="@+id/namazFragment"
+        android:id="@+id/namaz"
         android:name="com.example.project.screens.namaz.NamazFragment"
         android:label="fragment_namaz"
         tools:layout="@layout/fragment_namaz" />
     <fragment
-        android:id="@+id/qiblaFragment"
+        android:id="@+id/qibla"
         android:name="com.example.project.screens.qibla.QiblaFragment"
         android:label="fragment_qibla"
         tools:layout="@layout/fragment_qibla" />
     <fragment
-        android:id="@+id/vremyaFragment"
+        android:id="@+id/vremya"
         android:name="com.example.project.screens.vremya.VremyaFragment"
         android:label="fragment_vremya"
         tools:layout="@layout/fragment_vremya" />
