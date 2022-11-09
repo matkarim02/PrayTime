@@ -11,9 +11,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.bNav.selectedItemId = R.id.vremya
         binding.bNav.setOnNavigationItemSelectedListener{
             when(it.itemId){
-                R.id.vremya ->{}
+                R.id.vremya ->{
+
+                }
                 R.id.qibla ->{}
                 R.id.namaz ->{}
                 R.id.dua ->{}
