@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/duaFragment">
 
+    <fragment
+        android:id="@+id/duaFragment"
+        android:name="com.example.project.screens.dua.DuaFragment"
+        android:label="fragment_dua"
+        tools:layout="@layout/fragment_dua" />
+    <fragment
+        android:id="@+id/namazFragment"
+        android:name="com.example.project.screens.namaz.NamazFragment"
+        android:label="fragment_namaz"
+        tools:layout="@layout/fragment_namaz" />
+    <fragment
+        android:id="@+id/qiblaFragment"
+        android:name="com.example.project.screens.qibla.QiblaFragment"
+        android:label="fragment_qibla"
+        tools:layout="@layout/fragment_qibla" />
+    <fragment
+        android:id="@+id/vremyaFragment"
+        android:name="com.example.project.screens.vremya.VremyaFragment"
+        android:label="fragment_vremya"
+        tools:layout="@layout/fragment_vremya" />
 </navigation>
