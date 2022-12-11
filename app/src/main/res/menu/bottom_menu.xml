@@ -11,9 +11,9 @@
         android:title="qūbyla"
         android:orderInCategory="2"/>
     <item
-        android:id="@+id/namaz"
-        android:icon="@drawable/ic_namaz"
-        android:title="namaz oqū"
+        android:id="@+id/quran"
+        android:icon="@drawable/ic_quran"
+        android:title="quran oqū"
         android:orderInCategory="3"/>
     <item
         android:id="@+id/dua"
