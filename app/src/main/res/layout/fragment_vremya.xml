@@ -1,14 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".screens.vremya.VremyaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="vremya" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginBottom="10dp">
+       
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/ic_fajr"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Fajr"
+          android:textSize="35sp"
+          android:layout_marginLeft="12dp"
+          android:layout_marginStart="12dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="time"
+          android:textSize="20sp"
+          android:gravity="end"
+          android:layout_marginRight="20dp"
+          android:layout_marginEnd="20dp"
+          android:id="@+id/fajr"/>
+      
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginBottom="10dp">
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/ic_zuhr"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Zuhr"
+          android:textSize="35sp"
+          android:layout_marginLeft="12dp"
+          android:layout_marginStart="12dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="time"
+          android:textSize="20sp"
+          android:gravity="end"
+          android:layout_marginRight="20dp"
+          android:layout_marginEnd="20dp"
+          android:id="@+id/zuhr"/>
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginBottom="10dp">
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/ic_asr"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Asr"
+          android:textSize="35sp"
+          android:layout_marginLeft="12dp"
+          android:layout_marginStart="12dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="time"
+          android:textSize="20sp"
+          android:gravity="end"
+          android:layout_marginRight="20dp"
+          android:layout_marginEnd="20dp"
+          android:id="@+id/asr"/>
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginBottom="10dp">
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/ic_magrib"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Magrib"
+          android:textSize="35sp"
+          android:layout_marginLeft="12dp"
+          android:layout_marginStart="12dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="time"
+          android:textSize="20sp"
+          android:gravity="end"
+          android:layout_marginRight="20dp"
+          android:layout_marginEnd="20dp"
+          android:id="@+id/magrib"/>
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginBottom="10dp">
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:src="@drawable/ic_isha"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Isha"
+          android:textSize="35sp"
+          android:layout_marginLeft="12dp"
+          android:layout_marginStart="12dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="time"
+          android:textSize="20sp"
+          android:gravity="end"
+          android:layout_marginRight="20dp"
+          android:layout_marginEnd="20dp"
+          android:id="@+id/Isha"/>
+   </LinearLayout>
+
+
+
+
 
 </LinearLayout>
