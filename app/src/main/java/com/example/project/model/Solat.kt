@@ -3,7 +3,7 @@ package com.example.project.model
 
 import com.google.gson.annotations.SerializedName
 
-data class prayer(
+data class Solat(
     @SerializedName("address")
     val address: String,
     @SerializedName("city")

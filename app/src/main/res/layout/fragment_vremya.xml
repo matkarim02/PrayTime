@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -57,6 +58,7 @@
           android:layout_marginLeft="12dp"
           android:layout_marginStart="12dp"/>
       <TextView
+          android:id="@+id/zuhr"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:text="time"
@@ -64,7 +66,7 @@
           android:gravity="end"
           android:layout_marginRight="20dp"
           android:layout_marginEnd="20dp"
-          android:id="@+id/zuhr"/>
+          />
    </LinearLayout>
 
 
