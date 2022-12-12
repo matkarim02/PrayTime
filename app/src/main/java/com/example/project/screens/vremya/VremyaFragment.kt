@@ -32,7 +32,7 @@ class VremyaFragment : Fragment(), ISalatView {
          binding.fajr.text = salat.fajr
          binding.zuhr.text = salat.dhuhr
         binding.asr.text = salat.asr
-        binding.Isha.text = salat.isha
+        binding.isha.text = salat.isha
         binding.magrib.text = salat.maghrib
     }
 

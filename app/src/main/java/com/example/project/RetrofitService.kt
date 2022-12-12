@@ -17,7 +17,7 @@ interface RetrofitService {
         fun create(): RetrofitService{
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("http  s://muslimsalat.com")
+                .baseUrl("https://muslimsalat.com")
                 .build()
             return retrofit.create(RetrofitService::class.java)
         }

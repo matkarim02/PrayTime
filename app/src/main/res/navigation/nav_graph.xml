@@ -16,11 +16,6 @@
         android:label="fragment_namaz"
         tools:layout="@layout/fragment_namaz" />
     <fragment
-        android:id="@+id/qibla"
-        android:name="com.example.project.screens.qibla.QiblaFragment"
-        android:label="fragment_qibla"
-        tools:layout="@layout/fragment_qibla" />
-    <fragment
         android:id="@+id/vremya"
         android:name="com.example.project.screens.vremya.VremyaFragment"
         android:label="fragment_vremya"

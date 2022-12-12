@@ -5,8 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="40dp"
     tools:context=".screens.vremya.VremyaFragment">
+
+   <TextView
+       android:id="@+id/dateAndTime"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="36dp"
+       android:textAlignment="center"
+       android:textSize="24sp"
+       android:textStyle="bold" />
 
    <LinearLayout
        android:layout_width="match_parent"
@@ -14,27 +25,33 @@
        android:orientation="horizontal"
        android:gravity="center_vertical"
        android:layout_marginBottom="10dp">
-       
+
       <ImageView
           android:layout_width="50dp"
           android:layout_height="50dp"
           android:src="@drawable/ic_fajr"/>
+
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Fajr"
-          android:textSize="35sp"
+          android:layout_marginStart="12dp"
           android:layout_marginLeft="12dp"
-          android:layout_marginStart="12dp"/>
+          android:fontFamily="serif-monospace"
+          android:text="TAÑ"
+          android:textColor="#4CAF50"
+          android:textSize="35sp" />
+
       <TextView
+          android:id="@+id/fajr"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="time"
-          android:textSize="20sp"
-          android:gravity="end"
-          android:layout_marginRight="20dp"
           android:layout_marginEnd="20dp"
-          android:id="@+id/fajr"/>
+          android:layout_marginRight="20dp"
+          android:gravity="end"
+          android:text="time"
+          android:textColor="#4CAF50"
+          android:textSize="20sp"
+          android:textStyle="bold" />
       
    </LinearLayout>
 
@@ -50,23 +67,28 @@
           android:layout_width="50dp"
           android:layout_height="50dp"
           android:src="@drawable/ic_zuhr"/>
+
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Zuhr"
-          android:textSize="35sp"
+          android:layout_marginStart="12dp"
           android:layout_marginLeft="12dp"
-          android:layout_marginStart="12dp"/>
+          android:fontFamily="serif-monospace"
+          android:text="BESIN"
+          android:textColor="#4CAF50"
+          android:textSize="35sp" />
+
       <TextView
           android:id="@+id/zuhr"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="time"
-          android:textSize="20sp"
-          android:gravity="end"
-          android:layout_marginRight="20dp"
           android:layout_marginEnd="20dp"
-          />
+          android:layout_marginRight="20dp"
+          android:gravity="end"
+          android:text="time"
+          android:textColor="#4CAF50"
+          android:textSize="20sp"
+          android:textStyle="bold" />
    </LinearLayout>
 
 
@@ -81,22 +103,28 @@
           android:layout_width="50dp"
           android:layout_height="50dp"
           android:src="@drawable/ic_asr"/>
+
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Asr"
-          android:textSize="35sp"
+          android:layout_marginStart="12dp"
           android:layout_marginLeft="12dp"
-          android:layout_marginStart="12dp"/>
+          android:fontFamily="serif-monospace"
+          android:text="ASYR"
+          android:textColor="#4CAF50"
+          android:textSize="35sp" />
+
       <TextView
+          android:id="@+id/asr"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="time"
-          android:textSize="20sp"
-          android:gravity="end"
-          android:layout_marginRight="20dp"
           android:layout_marginEnd="20dp"
-          android:id="@+id/asr"/>
+          android:layout_marginRight="20dp"
+          android:gravity="end"
+          android:text="time"
+          android:textColor="#4CAF50"
+          android:textSize="20sp"
+          android:textStyle="bold" />
    </LinearLayout>
 
 
@@ -111,22 +139,28 @@
           android:layout_width="50dp"
           android:layout_height="50dp"
           android:src="@drawable/ic_magrib"/>
+
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Magrib"
-          android:textSize="35sp"
+          android:layout_marginStart="12dp"
           android:layout_marginLeft="12dp"
-          android:layout_marginStart="12dp"/>
+          android:fontFamily="serif-monospace"
+          android:text="AQŞAM"
+          android:textColor="#4CAF50"
+          android:textSize="35sp" />
+
       <TextView
+          android:id="@+id/magrib"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="time"
-          android:textSize="20sp"
-          android:gravity="end"
-          android:layout_marginRight="20dp"
           android:layout_marginEnd="20dp"
-          android:id="@+id/magrib"/>
+          android:layout_marginRight="20dp"
+          android:gravity="end"
+          android:text="time"
+          android:textColor="#4CAF50"
+          android:textSize="20sp"
+          android:textStyle="bold" />
    </LinearLayout>
 
 
@@ -141,22 +175,28 @@
           android:layout_width="50dp"
           android:layout_height="50dp"
           android:src="@drawable/ic_isha"/>
+
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Isha"
-          android:textSize="35sp"
+          android:layout_marginStart="12dp"
           android:layout_marginLeft="12dp"
-          android:layout_marginStart="12dp"/>
+          android:fontFamily="serif-monospace"
+          android:text="QŪPTAN"
+          android:textColor="#4CAF50"
+          android:textSize="30sp" />
+
       <TextView
+          android:id="@+id/isha"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="time"
-          android:textSize="20sp"
-          android:gravity="end"
-          android:layout_marginRight="20dp"
           android:layout_marginEnd="20dp"
-          android:id="@+id/Isha"/>
+          android:layout_marginRight="20dp"
+          android:gravity="end"
+          android:text="time"
+          android:textColor="#4CAF50"
+          android:textSize="20sp"
+          android:textStyle="bold" />
    </LinearLayout>
 
 
