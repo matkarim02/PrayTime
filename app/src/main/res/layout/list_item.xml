@@ -27,7 +27,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textName"
+                    android:id="@+id/zikrName"
                     android:textColor="#000"
                     android:textStyle="bold"
                     android:textSize="25sp"
@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:id="@+id/textdate"
+                    android:id="@+id/zikrContext"
                     android:layout_margin="10dp"
                     android:text="About zikr"
                     android:layout_width="match_parent"

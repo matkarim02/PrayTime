@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter(private val dataSet: ArrayList<Zikr>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
-
+    var itemClickListener : ((Zikr) -> Unit)? = null
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
       val zikr: TextView = itemView.findViewById(R.id.zikrName)
@@ -32,6 +32,10 @@ class CustomAdapter(private val dataSet: ArrayList<Zikr>) :
         val item = dataSet[position]
         holder.zikr.text = item.zikrName
         holder.context.text = item.aboutZikr
+
+        holder.itemView.setOnClickListener {
+            itemClickListener?.invoke(item)
+        }
     }
 
 
