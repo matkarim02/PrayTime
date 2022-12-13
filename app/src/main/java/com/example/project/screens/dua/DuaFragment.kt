@@ -1,5 +1,6 @@
 package com.example.project.screens.dua
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project.CustomAdapter
+import com.example.project.DetailedPage
 import com.example.project.R
 import com.example.project.Zikr
 
@@ -25,6 +27,12 @@ private lateinit var customAdapter: CustomAdapter
         recyclerView = view.findViewById<RecyclerView>(R.id.recycler)
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(this.context)
+
+        customAdapter.itemClickListener = {
+            val intent = Intent(this.context, DetailedPage::class.java)
+            intent.putExtra("item", it)
+            startActivity(intent)
+        }
 
         zikrList = ArrayList()
 
