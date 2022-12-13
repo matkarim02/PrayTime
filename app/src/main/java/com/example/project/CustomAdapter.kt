@@ -11,7 +11,7 @@ class CustomAdapter(private val dataSet: ArrayList<Zikr>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
       val zikr: TextView = itemView.findViewById(R.id.zikrName)
       val context: TextView = itemView.findViewById(R.id.zikrContext)
 
