@@ -7,19 +7,20 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-class CustomAdapter(private val dataSet: Array<String>) :
+class CustomAdapter(private val dataSet: ArrayList<Zikr>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(itemView) {
+      val zikr: TextView = itemView.findViewById(R.id.zikrName)
+      val context: TextView = itemView.findViewById(R.id.zikrContext)
 
 
     }
 
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-        // Create a new view, which defines the UI of the list item
+
         val view = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.list_item, viewGroup, false)
 
@@ -27,10 +28,10 @@ class CustomAdapter(private val dataSet: Array<String>) :
     }
 
 
-    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-
-
-        viewHolder.textView.text = dataSet[position]
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val item = dataSet[position]
+        holder.zikr.text = item.zikrName
+        holder.context.text = item.aboutZikr
     }
 
 
