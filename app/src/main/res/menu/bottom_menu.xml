@@ -6,13 +6,8 @@
         android:title="namaz uaqyty"
         android:orderInCategory="1"/>
     <item
-        android:id="@+id/quran"
-        android:icon="@drawable/ic_quran"
-        android:title="quran oqū"
-        android:orderInCategory="3"/>
-    <item
         android:id="@+id/dua"
         android:icon="@drawable/ic_dua"
         android:title="dūğa,zıkır"
-        android:orderInCategory="4"/>
+        android:orderInCategory="2"/>
 </menu>

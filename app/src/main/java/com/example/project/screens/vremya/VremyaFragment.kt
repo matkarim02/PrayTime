@@ -9,6 +9,8 @@ import com.example.project.ISalatView
 import com.example.project.SalatPresenter
 import com.example.project.databinding.FragmentVremyaBinding
 import com.example.project.model.Item
+import com.example.project.model.Solat
+import com.example.project.model.TodayWeather
 
 
 class VremyaFragment : Fragment(), ISalatView {
@@ -28,9 +30,12 @@ class VremyaFragment : Fragment(), ISalatView {
         super.onDestroy()
         _binding = null
     }
-    override fun onDataCompleteFromApi(salat: Item) {
-         binding.fajr.text = salat.fajr
-         binding.zuhr.text = salat.dhuhr
+    override fun onDataCompleteFromApi(salat: Item, country: Solat, pogoda: TodayWeather) {
+        binding.auarayi.text = pogoda.temperature
+        binding.country.text = country.query
+        binding.dateAndTime.text= salat.dateFor
+        binding.fajr.text = salat.fajr
+        binding.zuhr.text = salat.dhuhr
         binding.asr.text = salat.asr
         binding.isha.text = salat.isha
         binding.magrib.text = salat.maghrib
