@@ -3,8 +3,11 @@ package com.example.project
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Zikr(val zikrName:String, val aboutZikr: String) : Parcelable {
+data class Zikr(val zikrName:String, val aboutZikr: String, val arab: String, val latin: String) :
+    Parcelable {
     constructor(parcel: Parcel) : this(
+        parcel.readString()!!,
+        parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!
     ) {
@@ -13,6 +16,8 @@ data class Zikr(val zikrName:String, val aboutZikr: String) : Parcelable {
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(zikrName)
         parcel.writeString(aboutZikr)
+        parcel.writeString(arab)
+        parcel.writeString(latin)
     }
 
     override fun describeContents(): Int {
